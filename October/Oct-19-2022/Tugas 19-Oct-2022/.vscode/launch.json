@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Source Code/C/12-Oct-2022",
-      "program": "c:/Source Code/C/12-Oct-2022/build/Debug/outDebug",
+      "cwd": "c:/Source Code/C/Tugas 19-Oct-2022",
+      "program": "c:/Source Code/C/Tugas 19-Oct-2022/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
