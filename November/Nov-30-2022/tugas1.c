@@ -2,15 +2,15 @@
 
 int main(void)
 {
-    char pilihan, ulang;
+    char pick, repeat;
     do
     {
-        printf("##   PEMILIHAN HARI  ## \n");
-        printf("============================== \n");
-        printf("Pilihan anda: ");
-        scanf("%s", &pilihan);
+        printf("APLIKASI PEMILIHAN HARI \n");
+        printf("************************* \n");
+        printf("Ketikan Input A-G (Case Sensitive) : ");
+        scanf("%s", &pick);
 
-        switch (pilihan)
+        switch (pick)
         {
         case 'A':
         case 'a':
@@ -45,12 +45,12 @@ int main(void)
         }
         printf("\n");
 
-        printf("Ingin memilih menu lain (y/t)? ");
-        scanf(" %c", &ulang);
+        printf("Ingin memilih ulang? (T/F)? ");
+        scanf(" %c", &repeat);
         printf("\n");
-    } while (ulang != 't');
+    } while (repeat != 'f');
 
-    printf("Terimakasih... \n");
+    printf("Shutdown, Bye! \n");
 
     return 0;
 }
