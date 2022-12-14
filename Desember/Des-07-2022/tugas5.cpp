@@ -3,31 +3,31 @@ using namespace std;
 
 int main()
 {
-    int n, f1 = 0, f2 = 1, berikutnya = 0;
+    int n, fib1 = 0, fib2 = 1, then = 0;
 
-    cout << "Masukan Batas Deret Bilangan Fibonacci :  ";
+    cout << "Enter the Limits of the Fibonacci Number :  ";
     cin >> n;
 	cout<<endl;
-    cout << "Deret Fibonacci: ";
+    cout << "Fibonacci: ";
 
     for (int i = 1; i <= n; ++i)
     {
         // Mencetak dua deret bilangan fibonacci pertama.
         if(i == 1)
         {
-            cout << " " << f1<<" ";
+            cout << " " << fib1<<" ";
             continue;
         }
         if(i == 2)
         {
-            cout << f2 << " ";
+            cout << fib2 << " ";
             continue;
         }
-        berikutnya = f1 + f2;
-        f1 = f2;
-        f2 = berikutnya;
+        then = fib1 + fib2;
+        fib1 = fib2;
+        fib2 = then;
          // Mencetak deret bilangan fibonacci berikutnya.
-        cout << berikutnya << " ";
+        cout << then << " ";
     }
     return 0;
 }

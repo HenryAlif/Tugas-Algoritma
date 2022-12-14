@@ -4,27 +4,31 @@
 using namespace std;
 int main()
 {
-char i[26];
-int j,k,l,m;
-j=0;
-k=0;
-cout<<"Masukan jumlah karakter = ";
+char abjad[26];
+int vokal = 0,konsonan = 0,l,m;
+
+//input jumlah karakter yg akan diketik
+cout<<"Enter the number of characters = ";
 cin>>l;
-cout<<"Masukan kata = ";
+//input kata yg jumlahnya sesuai dengan karakter
+cout<<"Enter word = ";
 for (int m=0;m<l;m++)
-cin>>i[m];
+cin>>abjad[m];
 cout<<endl;
 
+//proses perhitungan
 for (m=0; m<l; m++)
 {
-if ((int)i[m]==97 || (int)i[m]==105 || (int)i[m]==117 || (int)i[m]==101 || (int)i[m]==111)
-j=j+1;
-else if ((int)i[m]==65 || (int)i[m]==73 || (int)i[m]==85 || (int)i[m]==69 || (int)i[m]==79)
-j=j+1;
-else
-k=k+1;
+    if ((int)abjad[m]==97 || (int)abjad[m]==105 || (int)abjad[m]==117 || (int)abjad[m]==101 || (int)abjad[m]==111)
+    vokal=vokal+1;
+    else if ((int)abjad[m]==65 || (int)abjad[m]==73 || (int)abjad[m]==85 || (int)abjad[m]==69 || (int)abjad[m]==79)
+    vokal=vokal+1;
+    else
+    konsonan=konsonan+1;
 }
-cout<<"Jumlah huruf vokal = "<<j<<endl;
-cout<<"Jumlah huruf konsonan = "<<k<<endl;
+
+//result
+cout<<"Number of vowels = "<<vokal<<endl;
+cout<<"Number of consonants = "<<konsonan<<endl;
 return 0;
 }
